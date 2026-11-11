@@ -35,19 +35,29 @@
         nav {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 1.2rem 2rem;
+            padding: 0.8rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        .logo {
-            font-size: 1.3rem;
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        .logo-img {
+            height: 48px;
+            width: auto;
+            border-radius: 4px;
+        }
+        .logo-text {
+            font-size: 1.2rem;
             font-weight: 800;
             color: #ffffff;
-            text-decoration: none;
             letter-spacing: 0.5px;
         }
-        .logo span {
+        .logo-text span {
             color: var(--accent);
         }
         .nav-links a {
@@ -239,13 +249,22 @@
             padding: 2rem;
             font-size: 0.9rem;
         }
+        .footer-logo {
+            height: 60px;
+            width: auto;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
 
     <header>
         <nav>
-            <a href="#" class="logo">CV. TANAKARYA <span>PERKASA</span></a>
+            <a href="#" class="logo-container">
+                <img src="logo.jpg" alt="CV. TANAKARYA PERKASA Logo" class="logo-img">
+                <div class="logo-text">CV. TANAKARYA <span>PERKASA</span></div>
+            </a>
             <div class="nav-links">
                 <a href="#tentang">Tentang Kami</a>
                 <a href="#layanan">Layanan</a>
@@ -259,7 +278,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Solusi Konstruksi Terpercaya & Berkualitas</h1>
-            <p>Spesialis Pembangunan Villa, Rumah Tinggal, Desain Arsitektur, dan Perencanaan Konstruksi Profesional.</p>
+            <p>Spesialis Pembangunan Villa, Rumah Tinggal, Desain Arsitektur, dan Perencanaan Konstruksi Profesional di Bali.</p>
             <a href="https://wa.me/6281338667353?text=Halo%20CV.%20TANAKARYA%20PERKASA,%20saya%20ingin%20konsultasi%20proyek" class="btn-primary" target="_blank">Konsultasi Gratis via WhatsApp</a>
         </div>
     </section>
@@ -269,7 +288,7 @@
             <h2>Tentang Kami</h2>
         </div>
         <div class="about-text">
-            <p><strong>CV. TANAKARYA PERKASA</strong> adalah kontraktor profesional yang bergerak di bidang penyediaan jasa konstruksi umum, spesialis pembangunan villa eksklusif, hunian pribadi, serta perencanaan arsitektur. Kami hadir dengan komitmen tinggi untuk menghadirkan bangunan berkualitas, estetis, tepat waktu, dan transparan sesuai anggaran yang Anda rencanakan.</p>
+            <p><strong>CV. TANAKARYA PERKASA CONTRACTOR BALI</strong> adalah kontraktor profesional yang bergerak di bidang penyediaan jasa konstruksi umum, spesialis pembangunan villa eksklusif, hunian pribadi, serta perencanaan arsitektur. Kami hadir dengan komitmen tinggi untuk menghadirkan bangunan berkualitas, estetis, tepat waktu, dan transparan sesuai anggaran yang Anda rencanakan.</p>
         </div>
     </section>
 
@@ -369,9 +388,9 @@
         <div class="contact-wrapper">
             <div class="contact-info">
                 <h3>Informasi Perusahaan</h3>
-                <p><strong>Nama Usaha:</strong> CV. TANAKARYA PERKASA</p>
-                <p><strong>Alamat:</strong> Jl. Raya Muding</p>
-                <p><strong>WhatsApp:</strong> +62 813-3866-7353</p>
+                <p><strong>Nama Usaha:</strong> CV. TANAKARYA PERKASA CONTRACTOR</p>
+                <p><strong>Alamat:</strong> Jl. Raya Muding, Bali</p>
+                <p><strong>WhatsApp / PH:</strong> 081-338-667-353</p>
                 <p><strong>Email:</strong> tanakaryaperkasacv@gmail.com</p>
                 <p><strong>Jam Operasional:</strong> Senin - Sabtu (08.00 - 17.00 WITA)</p>
             </div>
@@ -379,13 +398,14 @@
                 <h3>Konsultasi Proyek Anda</h3>
                 <p>Siap mewujudkan pembangunan rumah atau villa impian Anda? Kontak kami langsung via WhatsApp untuk diskusi awal, perencanaan desain, dan perancangan RAB secara gratis.</p>
                 <br>
-                <a href="https://wa.me/6281338667353?text=Halo%20CV.%20TANAKARYA%20PERKASA,%20saya%20ingin%20konsultasi%20proyek" class="btn-primary" style="text-align: center; display: block;" target="_blank">Chat via WhatsApp (081338667353)</a>
+                <a href="https://wa.me/6281338667353?text=Halo%20CV.%20TANAKARYA%20PERKASA,%20saya%20ingin%20konsultasi%20proyek" class="btn-primary" style="text-align: center; display: block;" target="_blank">Chat via WhatsApp (081-338-667-353)</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>© <span id="year"></span> CV. TANAKARYA PERKASA. All Rights Reserved.</p>
+        <img src="logo.jpg" alt="CV. TANAKARYA PERKASA Logo" class="footer-logo">
+        <p>© <span id="year"></span> CV. TANAKARYA PERKASA CONTRACTOR BALI. All Rights Reserved.</p>
     </footer>
 
     <script>
